@@ -1,8 +1,10 @@
 import React from 'react';
 import find from 'lodash/find';
+import css from 'next/css';
 import 'isomorphic-fetch';
 
 import LINK_GROUPS from '../constants/link-groups';
+import * as baseStyles from '../styles/base';
 
 import Head from '../components/Head';
 import About from '../components/About';
@@ -68,7 +70,7 @@ export default class extends React.Component {
         <Head />
 
         <div className="container">
-          <h1>Molly Fitzpatrick</h1>
+          <h1 className={styles.h1}>Molly Fitzpatrick</h1>
           <About />
           <div className="links">{links}</div>
         </div>
@@ -79,5 +81,13 @@ export default class extends React.Component {
       </div>
     );
   }
-
 }
+
+const styles = {
+  h1: css(baseStyles.raleway, baseStyles.blueGrey, {
+    fontSize: '5.5rem',
+    textAlign: 'center',
+    textTransform: 'uppercase'
+  }),
+
+};

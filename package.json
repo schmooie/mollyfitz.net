@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "next"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.2",
-    "next": "^1.1.2"
+    "next": "^1.2.3",
+    "react": "^15.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0"
   }
 }
